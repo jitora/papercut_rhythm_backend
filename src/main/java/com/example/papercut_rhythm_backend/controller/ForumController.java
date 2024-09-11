@@ -40,7 +40,6 @@ public class ForumController {
     })
     @GetMapping("/getTopicDetail")
     public R<Map<String, Object>> getTopicDetail(@RequestParam("topicId") String topicId) {
-
         return forumServiceImp.getTopicDetail(topicId);
     }
 
@@ -51,7 +50,6 @@ public class ForumController {
     })
     @GetMapping("/searchTopicByKeyword")
     public R<ArrayList<Map<String, Object>>> searchTopicByKeyword(@RequestParam("keyword") String keyword, @RequestParam("userId") String userId) {
-
         return forumServiceImp.searchTopic(keyword, userId);
     }
 
