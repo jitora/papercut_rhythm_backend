@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PapercutRhythmBackendApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(PapercutRhythmBackendApplication.class, args);
     }
 
